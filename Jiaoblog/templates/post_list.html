@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %} blog list {% endblock %}
+{% block title %} 王娇的博客｜文章列表 {% endblock %}
 
 
 {% block content %}
 	<div class="content">
         {% for post in posts %}
-	        <h3>{{ post.title }}</h3>
-		<div>{{ post.text }} </div> 
-	{% endfor %}     
+	        <h2>{{ post.title }}</h2>
+			<h4>{{ post.text }} </h4>
+			<h6>{{ post.tag }}</h6>
+		{% endfor %}
 	</div>    
 {% endblock %}
