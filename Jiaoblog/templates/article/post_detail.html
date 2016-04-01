@@ -4,9 +4,11 @@
 
 
 {% block content %}
-	<div class="content">
-	        <h2>{{ object.title }}</h2>
-			<h4>{{ object.text }} </h4>
-			<h6>{{ object.tag }}</h6>
-	</div>
+	    <h2 class="tittle">{{ object.title }}</h2>
+			<h3 class="content1">
+				{% autoescape on %}
+				{{ object.text }} 
+				{% endautoescape %}
+			</h3>
+			<h6	class="tag">{{ object.tag }}</h6>
 {% endblock %}

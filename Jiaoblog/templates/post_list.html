@@ -6,14 +6,14 @@
 {% block content %}
 	<div class="content list-group container">
         {% for post in posts %}
-					<button type="button" class="list-group-item">
-						<div class="vertical-center-row">
-						<div align="center">
-						<a href="{% url 'Post_detail' post.id %}"><h2>{{ post.title }}</h2></a>
-							<h2>{{ post.content }}</h2>
-						</div>
-						</div>
-					</button>
+					<div class="vertical-center-row">
+					<div align="center">
+						<a href="{% url 'Post_detail' post.id %}">
+								<h2 class="tittle">{{ post.title }}</h2>
+						</a>
+						<h3 class="tag">{{ post.tag }}</h3>
+					</div>
+					</div>
 		{% endfor %}
 	</div>
 {% endblock %}
