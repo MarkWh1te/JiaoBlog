@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.conf.urls.static import static
-import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^blog/',include('article.urls')),
-    ] 
+    url(r'^blog/', include('article.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),  
+    ]

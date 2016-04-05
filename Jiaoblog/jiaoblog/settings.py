@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
     'article',
 )
 
@@ -107,4 +108,6 @@ STATICFILES_DIRS = (
         BASE_DIR,
         )
         
-
+CKEDITOR_UPLOAD_PATH = "media/ckeditors/"
+CKEDITOR_IMAGE_BACKEND = 'pillow'
+CKEDITOR_JQUERY_URL = "/static/jquery.min.js"

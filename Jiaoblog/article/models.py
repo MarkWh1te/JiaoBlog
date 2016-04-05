@@ -1,5 +1,6 @@
 #coding:utf-8
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -15,7 +16,7 @@ class Tags(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200)
     create_time = models.DateTimeField(auto_now_add=True)
-    text = models.TextField()
+    text = RichTextField()
     tag = models.ForeignKey(Tags)
 
     class Meta:

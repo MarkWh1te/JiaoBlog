@@ -2,13 +2,10 @@
 
 {% block title %} Jiao's Blog ｜{{ object.title }} {% endblock %}
 
-
 {% block content %}
 	    <h2 class="tittle">{{ object.title }}</h2>
 			<h3 class="content1">
-				{% autoescape on %}
-				{{ object.text }} 
-				{% endautoescape %}
+				{{ object.text |safe}} 
 			</h3>
 			<h6	class="tag">{{ object.tag }}</h6>
 {% endblock %}
