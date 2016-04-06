@@ -1,9 +1,15 @@
-.tittle {
-  color: green;
+a {
+  font-size:60px;
+  color:black;
 }
-.content1 {
-  color:red;
+a:hover {
+  text-decoration: none;
+  color:pink;
 }
-.tag {
-  color:yellow;
+nav {
+  color:white;
+}
+nav:hover {
+  text-decoration: none;
+  color:pink;
 }
