@@ -47,7 +47,7 @@ jdcal==1.2
 Jinja2==2.7.2
 kombu==3.0.29
 lockfile==0.8
-lxml==3.3.3
+lxml==4.6.2
 Mako==0.9.1
 Markdown==2.6.2
 MarkupSafe==0.18
