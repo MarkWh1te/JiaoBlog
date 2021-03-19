@@ -27,7 +27,7 @@ django-filter==0.11.0
 django-grappelli==2.7.2
 django-guardian==1.3
 django-tinymce==2.0.5
-djangorestframework==3.2.4
+djangorestframework==3.11.2
 docutils==0.11
 duplicity==0.6.23
 enum34==1.1.2
