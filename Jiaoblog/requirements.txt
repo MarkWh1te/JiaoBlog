@@ -118,7 +118,7 @@ uTidylib==0.2
 vatnumber==1.1
 virtualenv==15.0.1
 vobject==0.8.1rc0
-Werkzeug==0.9.4
+Werkzeug==0.15.3
 xdiagnose===3.6.3build2
 xlwt==0.7.5
 zope.interface==4.0.5
